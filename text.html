@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containe">
+    
+    </div>
+    <script>
+        let arr=['youtuber','hey'];
+        let count=0;
+        let show=arr[count];
+       
+        function youtube(){
+        let showandcontainue=document.querySelector('.containe');
+        showandcontainue.innerHTML=`<h1>i am ${show.slice(
+            0,count)}</h1>`;
+        count++;
+       
+      
+        setTimeout(youtube,400);
+        }
+        youtube();
+       
+    </script>
+</body>
+</html>
